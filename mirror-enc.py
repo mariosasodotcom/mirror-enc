@@ -29,9 +29,9 @@ def help():
     help = """
     Usage:
 
-    ./mirror-enc -f FILE or FOLDER (1), FILE or FOLDER (2), ... , FILE or FOLDER (n)    # FILES MODE
+    python mirror-enc.py -f FILE or FOLDER (1), FILE or FOLDER (2), ... , FILE or FOLDER (n)    # FILES MODE
 
-    ./mirror-enc -t TEXT (1), TEXT (2), ... , TEXT (n)                                  # TEXTS MODE
+    python mirror-enc.py -t TEXT (1), TEXT (2), ... , TEXT (n)                                  # TEXTS MODE
     
     """
 
