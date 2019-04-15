@@ -24,7 +24,7 @@ Python 2 and Pycrypto must be installed on your computer.
 ### Repo Overview
 ```
 │   mirror-enc.py          start mirror-enc
-│   sources                source code of the tool
+│   modules                source code of the tool
 │   README.md              project readme
 │   LICENSE                license of the tool
 │   .gitignore             gitignore for the python program   
