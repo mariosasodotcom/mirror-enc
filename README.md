@@ -1,8 +1,7 @@
 # mirror-enc
-```
-    
+```   
      ___________ @ @                                                     
-    /   v1.0   @\   @                       _                            
+    /          @\   @                       _                            
     \___________/  _@              ___ __ _(_)__ _ __ _  ___ __ _        
               @  _/@ \_____       / _ ' _` | |__` |__` |/ _ \__` |       
                @/ \__/-=-=^`     | | | | | | |  | |  | | (_) | | |       
@@ -10,12 +9,20 @@
                  <|                                                      
                  <|                    github.com/M4R1OS4S0              
                  <|                                                     
+```
 
+### License
+```
+MIRROR-ENC IS LICENSED UNDER THE GNU GENERAL PUBLIC LICENSE v3
+```
+
+### Requirements
+```
+Python 2 and Pycrypto must be installed on your computer.
 ```
 
 ### Repo Overview
 ```
-
 │   mirror-enc.py          start mirror-enc
 │   sources                source code of the tool
 │   README.md              project readme
@@ -26,9 +33,7 @@
 
 ### Usage
 ```
-python mirror-enc.py -f FILE or FOLDER (1), FILE or FOLDER (2), ... , FILE or FOLDER (n)    # FILES MODE
-
-python mirror-enc.py -t TEXT (1), TEXT (2), ... , TEXT (n)                                  # TEXTS MODE   
+$ python mirror-enc.py    
 ```
 
 ### Files Mode
@@ -52,6 +57,12 @@ This module uses Base64 to encode or decode (if text files) files
 
 ### Texts Mode
 
+RSA Encryption:
+```
+This module uses Rivest–Shamir–Adleman (RSA) to encrypt and decrypt texts.
+A Public Key is used to encrypt text and a Private Key is used to decrypt text
+```
+
 AES Encryption:
 ```
 This module uses Advanced Encryption Standard (AES) to encrypt and decrypt texts.
@@ -68,4 +79,9 @@ This module uses MD5, SHA-1, SHA-224 and SHA-256 algorithms to generate hashes
 BASE64 Encoding:
 ```
 This module uses Base64 to encode or decode texts
+```
+
+### Gen Mode
+```
+This module generates random AES keys and RSA keypairs
 ```
