@@ -13,7 +13,7 @@
 
 ### License
 ```
-MIRROR-ENC IS LICENSED UNDER THE GNU GENERAL PUBLIC LICENSE v3
+MIRROR-ENC IS LICENSED UNDER THE GNU GENERAL PUBLIC LICENSE v3.
 ```
 
 ### Requirements
@@ -47,12 +47,12 @@ Change the AES key lenght either 16, 24 or 32 bytes to select AES-128, AES-192 o
 
 HASH Algorithm:
 ```
-This module uses MD5, SHA-1, SHA-224 and SHA-256 algorithms to generate hashes 
+This module uses MD5, SHA-1, SHA-224 and SHA-256 algorithms to generate hashes.
 ```
 
 BASE64 Encoding:
 ```
-This module uses Base64 to encode or decode (if text files) files
+This module uses Base64 to encode or decode files (if text files).
 ```
 
 ### Texts Mode
@@ -60,7 +60,7 @@ This module uses Base64 to encode or decode (if text files) files
 RSA Encryption:
 ```
 This module uses Rivest–Shamir–Adleman (RSA) to encrypt and decrypt texts.
-A Public Key is used to encrypt text and a Private Key is used to decrypt text
+A Public Key is used to encrypt texts and a Private Key is used to decrypt texts.
 ```
 
 AES Encryption:
@@ -73,15 +73,15 @@ Change the AES key lenght either 16, 24 or 32 bytes to select AES-128, AES-192 o
 
 HASH Algorithm:
 ```
-This module uses MD5, SHA-1, SHA-224 and SHA-256 algorithms to generate hashes 
+This module uses MD5, SHA-1, SHA-224 and SHA-256 algorithms to generate hashes.
 ```
 
 BASE64 Encoding:
 ```
-This module uses Base64 to encode or decode texts
+This module uses Base64 to encode or decode texts.
 ```
 
 ### Gen Mode
 ```
-This module generates random AES keys and RSA keypairs
+This module generates random AES keys and RSA keypairs.
 ```
