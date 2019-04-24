@@ -36,6 +36,11 @@ Python 2 and Pycrypto must be installed on your computer.
 $ python mirror-enc.py    
 ```
 
+### Chat Mode
+```
+This module performs a simple encrypted chat on LAN that combines RSA and AES algorithms    
+```
+
 ### Files Mode
 
 AES Encryption:
