@@ -41,24 +41,6 @@ $ python mirror-enc.py
 This module performs a simple encrypted chat on LAN that combines RSA and AES algorithms    
 ```
 
-### Files Mode
-
-AES Encryption:
-```
-This module uses Advanced Encryption Standard (AES) to encrypt and decrypt files. 
-The key which is used to encrypt should be same as the key that will be used for decrypt. 
-Change the AES key lenght either 16, 24 or 32 bytes to select AES-128, AES-192 or AES-256.
-```
-
-HASH Algorithm:
-```
-This module uses MD5, SHA-1, SHA-224 and SHA-256 algorithms to generate hashes.
-```
-
-BASE64 Encoding:
-```
-This module uses Base64 to encode or decode files (if text files).
-```
 
 ### Texts Mode
 
@@ -84,6 +66,25 @@ This module uses MD5, SHA-1, SHA-224 and SHA-256 algorithms to generate hashes.
 BASE64 Encoding:
 ```
 This module uses Base64 to encode or decode texts.
+```
+
+### Files Mode
+
+AES Encryption:
+```
+This module uses Advanced Encryption Standard (AES) to encrypt and decrypt files. 
+The key which is used to encrypt should be same as the key that will be used for decrypt. 
+Change the AES key lenght either 16, 24 or 32 bytes to select AES-128, AES-192 or AES-256.
+```
+
+HASH Algorithm:
+```
+This module uses MD5, SHA-1, SHA-224 and SHA-256 algorithms to generate hashes.
+```
+
+BASE64 Encoding:
+```
+This module uses Base64 to encode or decode files (if text files).
 ```
 
 ### Gen Mode
