@@ -38,7 +38,7 @@ $ python mirror-enc.py
 
 ### Chat Mode
 ```
-This module performs a simple encrypted chat on LAN that combines RSA and AES algorithms    
+This module performs a simple encrypted chat on LAN that combines RSA and AES algorithms.  
 ```
 
 
