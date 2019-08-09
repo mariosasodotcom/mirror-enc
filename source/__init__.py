@@ -23,4 +23,3 @@ __license__ = 'GPLv3'
 __author__ = 'Mario Saso'
 __email__ = 'mariosaso@protonmail.com'
 __url__ = 'https://github.com/M4R1OS4S0/mirror-enc'
-
