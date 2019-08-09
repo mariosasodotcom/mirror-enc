@@ -1,93 +1,46 @@
 # mirror-enc
-```   
      ___________ @ @                                                     
-    /          @\   @                       _                            
+    /  v0.0.1  @\   @                       _                            
     \___________/  _@              ___ __ _(_)__ _ __ _  ___ __ _        
               @  _/@ \_____       / _ ' _` | |__` |__` |/ _ \__` |       
                @/ \__/-=-=^`     | | | | | | |  | |  | | (_) | | |       
                 \_ /             |_| |_| |_|_|  |_|  |_|\___/  |_|-enc   
                  <|                                                      
-                 <|                    github.com/M4R1OS4S0              
-                 <|                                                     
+                 <|               .:   <github.com/M4R1OS4S0>   :.             
+                 <|               .: <mariosaso@protonmail.com> :.
 ```
 
 ### License
 ```
-MIRROR-ENC IS LICENSED UNDER THE GNU GENERAL PUBLIC LICENSE v3.
-```
-
-### Requirements
-```
-Python 2 and Pycrypto must be installed on your computer.
+Mirror-enc is licensed under the GNU General Public License v3.
 ```
 
 ### Repo Overview
 ```
-│   mirror-enc.py          start mirror-enc
-│   modules                source code of the tool
+│   dist                   start mirror-enc
+│   source                 source code of the tool
 │   README.md              project readme
 │   LICENSE                license of the tool
 │   .gitignore             gitignore for the python program   
 └───
 ```
 
-### Usage
+### Windows Users
 ```
-$ python mirror-enc.py    
+Windows Binary: dist/mirror-enc.exe
+
+MD5: e5ce7bafe637f633cfc35fe271926bb4
+SHA-1: 6a28bf4f0afc7e60117f9426179a96f6c0282efb
+SHA-224: 10f0dd6f8b6092cc171c500a77f4189325830c4ecdd753d8ab240e08
+SHA-256: 90f493c45e6339775eb4326ac0bf3b3de628b8173d8ff0cb7e543c465319f727 
 ```
 
-### Chat Mode
+### Linux Users
 ```
-This module performs a simple encrypted chat on LAN that combines RSA and AES algorithms.  
-```
+Linux Binary: dist/mirror-enc
 
-
-### Texts Mode
-
-RSA Encryption:
-```
-This module uses Rivest–Shamir–Adleman (RSA) to encrypt and decrypt texts.
-A Public Key is used to encrypt texts and a Private Key is used to decrypt texts.
-```
-
-AES Encryption:
-```
-This module uses Advanced Encryption Standard (AES) to encrypt and decrypt texts.
-Encrypted chipertext will be (or must be, if as input) encoded with Base64.
-The key which is used to encrypt should be same as the key that will be used for decrypt. 
-Change the AES key lenght either 16, 24 or 32 bytes to select AES-128, AES-192 or AES-256.
-```
-
-HASH Algorithm:
-```
-This module uses MD5, SHA-1, SHA-224 and SHA-256 algorithms to generate hashes.
-```
-
-BASE64 Encoding:
-```
-This module uses Base64 to encode or decode texts.
-```
-
-### Files Mode
-
-AES Encryption:
-```
-This module uses Advanced Encryption Standard (AES) to encrypt and decrypt files. 
-The key which is used to encrypt should be same as the key that will be used for decrypt. 
-Change the AES key lenght either 16, 24 or 32 bytes to select AES-128, AES-192 or AES-256.
-```
-
-HASH Algorithm:
-```
-This module uses MD5, SHA-1, SHA-224 and SHA-256 algorithms to generate hashes.
-```
-
-BASE64 Encoding:
-```
-This module uses Base64 to encode or decode files (if text files).
-```
-
-### Gen Mode
-```
-This module generates random AES keys and RSA keypairs.
+MD5: a6b3fb12f0f138bad2351b056893a99c
+SHA-1: 93811d7ecc95cb6281959c58194be1a45dc49152
+SHA-224: 55d81721399f40a92692b0fe0628c804334d625450fd03478f7876cb
+SHA-256: e11548ff88103d504eb02265716bd918a4ceb8d3dd92e95daf3d060113b5d76d
 ```
