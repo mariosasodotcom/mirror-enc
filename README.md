@@ -20,6 +20,7 @@ Mirror-enc is licensed under the GNU General Public License v3.
 ```
 │   dist                   start mirror-enc
 │   source                 source code of the tool
+|   mirror-enc.py          start mirror-enc from source
 │   README.md              project readme
 │   LICENSE                license of the tool
 │   .gitignore             gitignore for the python program   
@@ -44,4 +45,9 @@ MD5: a6b3fb12f0f138bad2351b056893a99c
 SHA-1: 93811d7ecc95cb6281959c58194be1a45dc49152
 SHA-224: 55d81721399f40a92692b0fe0628c804334d625450fd03478f7876cb
 SHA-256: e11548ff88103d504eb02265716bd918a4ceb8d3dd92e95daf3d060113b5d76d
+```
+
+### From Source Code
+```
+$ python mirror-enc.py
 ```
