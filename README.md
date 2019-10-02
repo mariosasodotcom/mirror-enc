@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/M4R1OS4S0/mirror-enc">
-    <img src="https://github.com/M4R1OS4S0/mirror-enc/blob/master/resources/logo.png" alt="Logo" width=700 height=490>
+    <img src="https://github.com/M4R1OS4S0/mirror-enc/blob/master/resources/logo.png" alt="Logo" width=787 height=254>
   </a>
 
 
