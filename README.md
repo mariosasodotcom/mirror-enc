@@ -1,7 +1,7 @@
 ### mirror-enc v0.0.1
 
 <p align="center">
-  <a href="https://github.com/M4R1OS4S0/mirror-enc">
+  <a 
     <img src="https://github.com/M4R1OS4S0/mirror-enc/blob/master/resources/logo.jpg" alt="Logo" width=72 height=72>
   </a>
 
