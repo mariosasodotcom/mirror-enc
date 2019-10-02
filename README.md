@@ -20,6 +20,7 @@
 
 - [Quick start](#quick-start)
 - [What's included](#whats-included)
+- [Checksum](#checksum)
 - [About me](#about-me)
 - [Copyright and license](#copyright-and-license)
 
@@ -47,13 +48,9 @@
 
 --------------------------------------------------------------------------------
 
-## Windows binary
+## Checksum
 
-- Path: resources/mirror-enc.exe
-
-- Type: Windows Executable
-
-- Hashes:
+resources/mirror-enc.exe
 ```
 MD5: 56ebbd2411a1e1a607f43080793264a8
 SHA-1: 869b00d0f86a2aa43bba3ba71460b80e63f01ae6
