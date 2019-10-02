@@ -2,10 +2,9 @@
 
 <p align="center">
   <a href="https://github.com/M4R1OS4S0/mirror-enc">
-    <img src="https://github.com/M4R1OS4S0/mirror-enc/blob/master/resources/logo.png" alt="Logo" width=700 height=350>
+    <img src="https://github.com/M4R1OS4S0/mirror-enc/blob/master/resources/logo.png" alt="Logo" width=700 height=490>
   </a>
 
-  <h3 align="center">Logo</h3>
 
   <p align="center">
     A cryptography toolkit that provide a wide range of encryption algorithms (like AES and RSA) for your strings, files and chats
