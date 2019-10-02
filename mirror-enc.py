@@ -17,18 +17,20 @@
 #    along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 
+# Import statements
+import sys
+
+# Python 3 is not supported
+if sys.version_info.major == 3:
+    print('\nError: mirror-enc do not support python3\n')
+    sys.exit()
+
+
 # Import mirror-enc modules
-from source.__main__ import main
-from source.MirrorUtils import *
+from mirrorenc.MirrorUtils import *
+from mirrorenc.__main__ import main
 
 
 # Start mirror-enc
 if __name__ == '__main__':
-
-    try:
-        ClearScreen()
-        main()
-        ClearScreen()
-        
-    except KeyboardInterrupt:
-        ClearScreen()
+    main()
