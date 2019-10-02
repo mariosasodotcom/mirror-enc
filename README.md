@@ -47,6 +47,23 @@
 
 --------------------------------------------------------------------------------
 
+## Windows binary
+
+- Path: resources/mirror-enc.exe
+
+- Type: Windows Executable
+
+- Hashes:
+```
+MD5: 56ebbd2411a1e1a607f43080793264a8
+SHA-1: 869b00d0f86a2aa43bba3ba71460b80e63f01ae6
+SHA-224: 5b78ababee323dbbd36c649a06223d245ae9b04e351cecf5dda6605d
+SHA-256: d74885068e0ab9311474745eacfa53d24d618de5e4e9b6461ceba2ca50a94252
+```
+
+--------------------------------------------------------------------------------
+
+
 ## About me
 
 **Bio**
