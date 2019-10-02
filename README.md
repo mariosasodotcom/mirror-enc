@@ -1,9 +1,11 @@
 ### mirror-enc v0.0.1
 
 <p align="center">
-  <a 
-    <img src="https://github.com/M4R1OS4S0/mirror-enc/blob/master/resources/logo.jpg" alt="Logo" width=72 height=72>
+  <a href="https://github.com/M4R1OS4S0/mirror-enc">
+    <img src="https://github.com/M4R1OS4S0/mirror-enc/blob/master/resources/logo.png" alt="Logo" width=700 height=350>
   </a>
+
+  <h3 align="center">Logo</h3>
 
   <p align="center">
     A cryptography toolkit that provide a wide range of encryption algorithms (like AES and RSA) for your strings, files and chats
