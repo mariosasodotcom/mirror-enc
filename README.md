@@ -7,8 +7,7 @@
 
 
   <p align="center">
-    A cryptography toolkit that provide a wide range of encryption algorithms (like AES and RSA).
-  It can encrypt strings, files and chats.
+    A cryptography toolkit that provide a wide range of encryption algorithms (like AES and RSA)
     <br>
     <a href="https://github.com/M4R1OS4S0/mirror-enc/issues/new?template=bug.md">Report bug</a>
     ·
