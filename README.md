@@ -39,7 +39,7 @@
 ```
 │   mirror-enc.py          start mirror-enc
 │   mirrorenc              source code of the tool
-|   resources              logo img and windows binary
+│   resources              logo img and windows binary
 │   README.md              project readme
 │   LICENSE                license of the tool
 │   .gitignore             gitignore for the python program   
