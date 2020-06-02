@@ -18,19 +18,10 @@
 
 ## Table of contents
 
-- [Quick start](#quick-start)
 - [What's included](#whats-included)
 - [How it works](#how-it-works)
 - [About me](#about-me)
 - [Copyright and license](#copyright-and-license)
-
---------------------------------------------------------------------------------
-
-## Quick start
-
-```  
-# python mirror-enc.py  
-```
 
 --------------------------------------------------------------------------------
 
@@ -52,31 +43,31 @@
 ```
 Usage:    
     
-    $ mirror-enc --rsa-enc -k <pub_key_path> -s <plaintext_string>
+    $ python mirror-enc.py --rsa-enc -k <pub_key_path> -s <plaintext_string>
     [RSA String Encryption]
     
-    $ mirror-enc --rsa-dec -k <prv_key_path> -s <ciphertext_string>
+    $ python mirror-enc.py --rsa-dec -k <prv_key_path> -s <ciphertext_string>
     [RSA String Decryption]
     
-    $ mirror-enc --rsa-gen -d <dir_path>
+    $ python mirror-enc.py --rsa-gen -d <dir_path>
     [RSA Keypair Generator]
     
-    $ mirror-enc --aes-enc -k <key> -s <plaintext_string>
+    $ python mirror-enc.py --aes-enc -k <key> -s <plaintext_string>
     [AES String Encryption]
     
-    $ mirror-enc --aes-dec -k <key> -s <ciphertext_string>
+    $ python mirror-enc.py --aes-dec -k <key> -s <ciphertext_string>
     [AES String Decryption]
     
-    $ mirror-enc --aes-enc -k <key> -f <plaintext_file_path>
+    $ python mirror-enc.py --aes-enc -k <key> -f <plaintext_file_path>
     [AES File Encryption]
     
-    $ mirror-enc --aes-dec -k <key> -f <ciphertext_file_path>
+    $ python mirror-enc.py --aes-dec -k <key> -f <ciphertext_file_path>
     [AES File Decryption]
     
-    $ mirror-enc --get-hashes -s <string>
+    $ python mirror-enc.py --get-hashes -s <string>
     [HASH String Calculator]
     
-    $ mirror-enc --get-hashes -f <file_path>
+    $ python mirror-enc.py --get-hashes -f <file_path>
     [HASH File Calculator]
 ```
 
