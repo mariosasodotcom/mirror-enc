@@ -7,7 +7,7 @@
 
 
   <p align="center">
-    A cryptography toolkit that provide a wide range of encryption algorithms (like AES and RSA)
+    A cryptography toolkit that provide AES and RSA encryption algorithms
     <br>
     <a href="https://github.com/M4R1OS4S0/mirror-enc/issues/new?template=bug.md">Report bug</a>
     ·
@@ -20,7 +20,7 @@
 
 - [Quick start](#quick-start)
 - [What's included](#whats-included)
-- [Checksum](#checksum)
+- [How it works](#how-it-works)
 - [About me](#about-me)
 - [Copyright and license](#copyright-and-license)
 
@@ -38,8 +38,7 @@
 
 ```
 │   mirror-enc.py          start mirror-enc
-│   mirrorenc              source code of the tool
-│   resources              logo img and windows binary
+│   resources              logo img
 │   README.md              project readme
 │   LICENSE                license of the tool
 │   .gitignore             gitignore for the python program   
@@ -48,24 +47,46 @@
 
 --------------------------------------------------------------------------------
 
-## Checksum
+## How it works
 
-resources/mirror-enc.exe
 ```
-MD5: 56ebbd2411a1e1a607f43080793264a8
-SHA-1: 869b00d0f86a2aa43bba3ba71460b80e63f01ae6
-SHA-224: 5b78ababee323dbbd36c649a06223d245ae9b04e351cecf5dda6605d
-SHA-256: d74885068e0ab9311474745eacfa53d24d618de5e4e9b6461ceba2ca50a94252
+Usage:    
+    
+    $ mirror-enc --rsa-enc -k <pub_key_path> -s <plaintext_string>
+    [RSA String Encryption]
+    
+    $ mirror-enc --rsa-dec -k <prv_key_path> -s <ciphertext_string>
+    [RSA String Decryption]
+    
+    $ mirror-enc --rsa-gen -d <dir_path>
+    [RSA Keypair Generator]
+    
+    $ mirror-enc --aes-enc -k <key> -s <plaintext_string>
+    [AES String Encryption]
+    
+    $ mirror-enc --aes-dec -k <key> -s <ciphertext_string>
+    [AES String Decryption]
+    
+    $ mirror-enc --aes-enc -k <key> -f <plaintext_file_path>
+    [AES File Encryption]
+    
+    $ mirror-enc --aes-dec -k <key> -f <ciphertext_file_path>
+    [AES File Decryption]
+    
+    $ mirror-enc --get-hashes -s <string>
+    [HASH String Calculator]
+    
+    $ mirror-enc --get-hashes -f <file_path>
+    [HASH File Calculator]
 ```
 
 --------------------------------------------------------------------------------
-
 
 ## About me
 
 **Bio**
 
-My name is Mario and I'm 22 years old. I am a computer engineering student in Pisa and a music producer.
+My name is Mario and I'm 23 years old. I am a computer engineering student in Pisa and a music producer.
 
 **Contact Me**
 
