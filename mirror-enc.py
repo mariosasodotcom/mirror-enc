@@ -79,7 +79,6 @@ class MirrorEnc:
             elif self.mode == 'file':
                 self.string = open(arg_list[2], 'rb').read()
                 self.binpath = arg_list[2]
-            
         
     def rsa_enc(self):
         prv_key = RSA.importKey(self.key)
