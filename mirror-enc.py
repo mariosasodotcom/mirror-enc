@@ -29,7 +29,6 @@ __url__ = 'https://github.com/M4R1OS4S0/mirror-enc'
 # Import statements
 import os
 import sys
-import tqdm
 import string
 import random
 import base64
