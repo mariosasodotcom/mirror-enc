@@ -141,31 +141,31 @@ banner = """
 usage = """
     Usage:    
     
-    $ mirror-enc --rsa-enc -k <pub_key_path> -s <plaintext_string>
+    $ python mirror-enc.py --rsa-enc -k <pub_key_path> -s <plaintext_string>
     [RSA String Encryption]
     
-    $ mirror-enc --rsa-dec -k <prv_key_path> -s <ciphertext_string>
+    $ python mirror-enc.py --rsa-dec -k <prv_key_path> -s <ciphertext_string>
     [RSA String Decryption]
     
-    $ mirror-enc --rsa-gen -d <dir_path>
+    $ python mirror-enc.py --rsa-gen -d <dir_path>
     [RSA Keypair Generator]
     
-    $ mirror-enc --aes-enc -k <key> -s <plaintext_string>
+    $ python mirror-enc.py --aes-enc -k <key> -s <plaintext_string>
     [AES String Encryption]
     
-    $ mirror-enc --aes-dec -k <key> -s <ciphertext_string>
+    $ python mirror-enc.py --aes-dec -k <key> -s <ciphertext_string>
     [AES String Decryption]
     
-    $ mirror-enc --aes-enc -k <key> -f <plaintext_file_path>
+    $ python mirror-enc.py --aes-enc -k <key> -f <plaintext_file_path>
     [AES File Encryption]
     
-    $ mirror-enc --aes-dec -k <key> -f <ciphertext_file_path>
+    $ python mirror-enc.py --aes-dec -k <key> -f <ciphertext_file_path>
     [AES File Decryption]
     
-    $ mirror-enc --get-hashes -s <string>
+    $ python mirror-enc.py --get-hashes -s <string>
     [HASH String Calculator]
     
-    $ mirror-enc --get-hashes -f <file_path>
+    $ python mirror-enc.py --get-hashes -f <file_path>
     [HASH File Calculator]
 """
 
@@ -280,83 +280,88 @@ def main():
     # Mirror-enc object
     obj = MirrorEnc(arg_list)
     
-    # RSA Encryption
-    if (obj.alg == '--rsa-enc'):
-        print(rsa_encdec_help)
-        print('\nPlaintext: ' + obj.string)
-        print('\nPubkey path: ' + obj.keypath)
-        print('\nEncrypting string (RSA)...')
-        cipher = obj.rsa_enc()
-        encoded = base64.b64encode(str(cipher))
-        print('\n[+] Ciphertext: ' + encoded + '\n')
-        
-    # RSA Decryption
-    elif (obj.alg == '--rsa-dec'):
-        print(rsa_encdec_help)
-        print('\nCiphertext: ' + obj.string)
-        print('\nPrvkey path: ' + obj.keypath)
-        print('\nDecrypting string (RSA)...')
-        obj.string = base64.b64decode(obj.string)
-        plain = obj.rsa_dec()
-        print('\n[+] Plaintext: ' + str(plain) + '\n')
-        
-    # RSA Keypair Gen
-    elif (obj.alg == '--rsa-gen'):
-        print(rsa_gen_help)
-        print('\nKeypair folder: ' + obj.dirkeypath)
-        print('\nGenerating keypair RSA-2048...')
-        obj.rsa_gen()
-        print('\n[+] Done!' + '\n')
-        
-    # AES Encryption
-    elif (obj.alg == '--aes-enc'):
-        if (obj.mode == 'string'):
-            print(aes_string_help)
-            print('\nString: ' + obj.string)
-            print('\nEncrypting string (AES-256)...')
-            cipher = obj.aes_enc()
+    try:
+    
+        # RSA Encryption
+        if (obj.alg == '--rsa-enc'):
+            print(rsa_encdec_help)
+            print('\nPlaintext: ' + obj.string)
+            print('\nPubkey path: ' + obj.keypath)
+            print('\nEncrypting string (RSA)...')
+            cipher = obj.rsa_enc()
             encoded = base64.b64encode(str(cipher))
             print('\n[+] Ciphertext: ' + encoded + '\n')
-        elif (obj.mode == 'file'):
-            print(aes_file_help)
-            print('\nFile: ' + obj.binpath)
-            print('\nEncrypting file (AES-256)...')
-            cipher = obj.aes_enc()
-            open(obj.binpath, 'wb').write(cipher)
-            print('\n[+] Done!' + '\n')
             
-    # AES Decryption
-    elif (obj.alg == '--aes-dec'):
-        if (obj.mode == 'string'):
-            print(aes_string_help)
-            print('\nString: ' + obj.string)
-            print('\nDecrypting string (AES-256)...')
+        # RSA Decryption
+        elif (obj.alg == '--rsa-dec'):
+            print(rsa_encdec_help)
+            print('\nCiphertext: ' + obj.string)
+            print('\nPrvkey path: ' + obj.keypath)
+            print('\nDecrypting string (RSA)...')
             obj.string = base64.b64decode(obj.string)
-            plain = obj.aes_dec()
+            plain = obj.rsa_dec()
             print('\n[+] Plaintext: ' + str(plain) + '\n')
-        elif (obj.mode == 'file'):
-            print(aes_file_help)
-            print('\nFile: ' + obj.binpath)
-            print('\nDecrypting file (AES-256)...')
-            plain = obj.aes_dec()
-            open(obj.binpath, 'wb').write(plain)
+            
+        # RSA Keypair Gen
+        elif (obj.alg == '--rsa-gen'):
+            print(rsa_gen_help)
+            print('\nKeypair folder: ' + obj.dirkeypath)
+            print('\nGenerating keypair RSA-2048...')
+            obj.rsa_gen()
             print('\n[+] Done!' + '\n')
             
-    # Get Hashes
-    elif (obj.alg == '--get-hashes'):
-        print(hashes_help)
-        if (obj.mode == 'string'):
-            print('\nString: ' + obj.string)
-        elif (obj.mode == 'file'):
-            print('\nFile: ' + obj.binpath)
-        print('\nCalculating hashes...')
-        hashes = obj.get_hashes()
-        print('')
-        print('[+] MD5:\t' + str(hashes[0]))
-        print('[+] SHA-1:\t' + str(hashes[1]))
-        print('[+] SHA-224:\t' + str(hashes[2]))
-        print('[+] SHA-256:\t' + str(hashes[3]))
-        print('')
+        # AES Encryption
+        elif (obj.alg == '--aes-enc'):
+            if (obj.mode == 'string'):
+                print(aes_string_help)
+                print('\nString: ' + obj.string)
+                print('\nEncrypting string (AES-256)...')
+                cipher = obj.aes_enc()
+                encoded = base64.b64encode(str(cipher))
+                print('\n[+] Ciphertext: ' + encoded + '\n')
+            elif (obj.mode == 'file'):
+                print(aes_file_help)
+                print('\nFile: ' + obj.binpath)
+                print('\nEncrypting file (AES-256)...')
+                cipher = obj.aes_enc()
+                open(obj.binpath, 'wb').write(cipher)
+                print('\n[+] Done!' + '\n')
+                
+        # AES Decryption
+        elif (obj.alg == '--aes-dec'):
+            if (obj.mode == 'string'):
+                print(aes_string_help)
+                print('\nString: ' + obj.string)
+                print('\nDecrypting string (AES-256)...')
+                obj.string = base64.b64decode(obj.string)
+                plain = obj.aes_dec()
+                print('\n[+] Plaintext: ' + str(plain) + '\n')
+            elif (obj.mode == 'file'):
+                print(aes_file_help)
+                print('\nFile: ' + obj.binpath)
+                print('\nDecrypting file (AES-256)...')
+                plain = obj.aes_dec()
+                open(obj.binpath, 'wb').write(plain)
+                print('\n[+] Done!' + '\n')
+                
+        # Get Hashes
+        elif (obj.alg == '--get-hashes'):
+            print(hashes_help)
+            if (obj.mode == 'string'):
+                print('\nString: ' + obj.string)
+            elif (obj.mode == 'file'):
+                print('\nFile: ' + obj.binpath)
+            print('\nCalculating hashes...')
+            hashes = obj.get_hashes()
+            print('')
+            print('[+] MD5:\t' + str(hashes[0]))
+            print('[+] SHA-1:\t' + str(hashes[1]))
+            print('[+] SHA-224:\t' + str(hashes[2]))
+            print('[+] SHA-256:\t' + str(hashes[3]))
+            print('')
+            
+    except:
+        print('\n[-] An error has occurred' + '\n')
 
 # Start mirror-enc
 if __name__ == '__main__':
