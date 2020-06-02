@@ -1,4 +1,4 @@
-### mirror-enc v0.0.1
+### mirror-enc v1.0.0
 
 <p align="center">
   <a href="https://github.com/M4R1OS4S0/mirror-enc">
