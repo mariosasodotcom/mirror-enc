@@ -266,7 +266,7 @@ def get_arg_list(argv):
     # Help
     else:
         print(usage)
-        sys.exit(0)         
+        sys.exit()         
 
 def run(arg_list):
     
