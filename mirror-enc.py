@@ -79,7 +79,8 @@ class MirrorEnc:
             elif self.mode == 'file':
                 self.string = open(arg_list[2], 'rb').read()
                 self.binpath = arg_list[2]
-                
+            
+        
     def rsa_enc(self):
         prv_key = RSA.importKey(self.key)
         cipher = prv_key.encrypt(self.string, 32)
@@ -266,15 +267,9 @@ def get_arg_list(argv):
     # Help
     else:
         print(usage)
-        sys.exit()         
+        sys.exit(0)         
 
-def main():
-    
-    # Print mirror-enc banner
-    print(banner)
-    
-    # Get arguments
-    arg_list = get_arg_list(sys.argv)
+def run(arg_list):
     
     # Mirror-enc object
     obj = MirrorEnc(arg_list)
@@ -356,13 +351,25 @@ def main():
         print('[+] SHA-224:\t' + str(hashes[2]))
         print('[+] SHA-256:\t' + str(hashes[3]))
         print('')
-
-# Start mirror-enc
-if __name__ == '__main__':
+        
+def main():
+    
+    # Py version info controller
+    if sys.version_info.major == 3:
+        print('\nError: mirror-enc do not support python3\n')
+        sys.exit()
+    
+    # Print mirror-enc banner
+    print(banner)
+    
+    # Get arguments
+    arg_list = get_arg_list(sys.argv)
+    
+    # Start mirror-enc
     try:
-        if sys.version_info.major == 3:
-            print('\nError: mirror-enc do not support python3\n')
-        else:
-            main()
+        run(arg_list)
     except:
         print('\n[-] An error has occurred' + '\n')
+
+if __name__ == '__main__':
+    main()
