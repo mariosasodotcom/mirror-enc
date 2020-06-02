@@ -88,4 +88,4 @@ My name is Mario and I'm 23 years old. I am a computer engineering student in Pi
 
 ## Copyright and license
 
-Copyright (C) 2019 Mario Saso. Code released under the [GPLv3](https://github.com/M4R1OS4S0/mirror-enc/blob/master/LICENSE).
+Copyright (C) 2019-2020 Mario Saso. Code released under the [GPLv3](https://github.com/M4R1OS4S0/mirror-enc/blob/master/LICENSE).
