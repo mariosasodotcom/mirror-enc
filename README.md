@@ -42,8 +42,7 @@
 
 Usage:
 
-```    
-    
+```      
     $ python3 mirror-enc.py 
 ```
 
