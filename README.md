@@ -40,35 +40,11 @@
 
 ## How it works
 
-```
-Usage:    
+Usage:
+
+```    
     
-    $ python mirror-enc.py --rsa-enc -k <pub_key_path> -s <plaintext_string>
-    [RSA String Encryption]
-    
-    $ python mirror-enc.py --rsa-dec -k <prv_key_path> -s <ciphertext_string>
-    [RSA String Decryption]
-    
-    $ python mirror-enc.py --rsa-gen -d <dir_path>
-    [RSA Keypair Generator]
-    
-    $ python mirror-enc.py --aes-enc -k <key> -s <plaintext_string>
-    [AES String Encryption]
-    
-    $ python mirror-enc.py --aes-dec -k <key> -s <ciphertext_string>
-    [AES String Decryption]
-    
-    $ python mirror-enc.py --aes-enc -k <key> -f <plaintext_file_path>
-    [AES File Encryption]
-    
-    $ python mirror-enc.py --aes-dec -k <key> -f <ciphertext_file_path>
-    [AES File Decryption]
-    
-    $ python mirror-enc.py --get-hashes -s <string>
-    [HASH String Calculator]
-    
-    $ python mirror-enc.py --get-hashes -f <file_path>
-    [HASH File Calculator]
+    $ python3 mirror-enc.py 
 ```
 
 --------------------------------------------------------------------------------
