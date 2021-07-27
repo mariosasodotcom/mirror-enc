@@ -7,7 +7,7 @@
 
 
   <p align="center">
-    A cryptography toolkit that provide AES and RSA encryption algorithms
+    A GPG frontend that provide AES and RSA encryption algorithms
     <br>
     <a href="https://github.com/M4R1OS4S0/mirror-enc/issues/new?template=bug.md">Report bug</a>
     ·
