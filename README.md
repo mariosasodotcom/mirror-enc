@@ -56,11 +56,12 @@ My name is Mario and I'm 23 years old. I am a computer engineering student in Pi
 
 **Contact Me**
 
-- Github: <https://github.com/M4R1OS4S0>
-- E-mail: mariosaso@protonmail.com
+- WebSite: https://www.mariosaso.com
+- Github:  https://github.com/M4R1OS4S0
+- E-mail:  mariosaso@protonmail.com
 
 --------------------------------------------------------------------------------
 
 ## Copyright and license
 
-Copyright (C) 2019-2020 Mario Saso. Code released under the [GPLv3](https://github.com/M4R1OS4S0/mirror-enc/blob/master/LICENSE).
+Copyright (C) 2019-2021 Mario Saso. Code released under the [GPLv3](https://github.com/M4R1OS4S0/mirror-enc/blob/master/LICENSE).
