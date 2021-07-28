@@ -203,8 +203,8 @@ def rsa_sec_list():
 		print("\n[-] An error has occurred")
 		print(out.stderr.decode('utf-8'))
 		
-def rsa_delete(file):
-	command = ["gpg", "--delete-key", file]
+def rsa_delete(uid):
+	command = ["gpg", "--delete-key", uid]
 	out = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	if (out.returncode == 0):
 		print("\n[+] Key is correctly deleted")
