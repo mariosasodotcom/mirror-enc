@@ -224,7 +224,7 @@ def rsa_sec_delete(uid):
 		print(out.stderr.decode('utf-8'))
 		
 def rsa_enc(uid_pub, file):
-	command = ["gpg", "-r", uid_pub, "--armor", "--sign", "-o", file+".rsa", "--encrypt", file]
+	command = ["gpg", "-o", file+".rsa", "-r", uid_pub, "--armor", "--encrypt", file]
 	out = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	if (out.returncode == 0):
 		print("\n[+] File is correctly encrypted")
@@ -322,10 +322,12 @@ def start():
 		rsa_sec_list()
 		
 	elif (option == '9'):
-		rsa_delete()
+		uid = input('Public UID: ')
+		rsa_delete(uid)
 		
 	elif (option == '10'):
-		rsa_sec_delete()
+		uid = input('Private UID: ')
+		rsa_sec_delete(uid)
 		
 	elif (option == '11'):
 		uid = input('Recipient Public UID: ')
