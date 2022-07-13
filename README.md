@@ -1,17 +1,17 @@
 ### mirror-enc v1.0.0
 
 <p align="center">
-  <a href="https://github.com/M4R1OS4S0/mirror-enc">
-    <img src="https://github.com/M4R1OS4S0/mirror-enc/blob/master/resources/logo.png" alt="Logo" width=787 height=254>
+  <a href="https://github.com/mariosasodotcom/mirror-enc">
+    <img src="https://github.com/mariosasodotcom/mirror-enc/blob/master/resources/logo.png" alt="Logo" width=787 height=254>
   </a>
 
 
   <p align="center">
     A GPG frontend that provide AES and RSA encryption algorithms
     <br>
-    <a href="https://github.com/M4R1OS4S0/mirror-enc/issues/new?template=bug.md">Report bug</a>
+    <a href="https://github.com/mariosasodotcom/mirror-enc/issues/new?template=bug.md">Report bug</a>
     ·
-    <a href="https://github.com/M4R1OS4S0/mirror-enc/issues/new?template=feature.md&labels=feature">Request feature</a>
+    <a href="https://github.com/mariosasodotcom/mirror-enc/issues/new?template=feature.md&labels=feature">Request feature</a>
   </p>
 </p>
 
@@ -52,12 +52,12 @@ Usage:
 
 **Bio**
 
-My name is Mario and I'm 23 years old. I am a computer engineering student in Pisa and a music producer.
+My name is Mario and I'm 25 years old. I am a computer engineering student in Pisa and a music producer.
 
 **Contact Me**
 
 - WebSite: https://www.mariosaso.com
-- Github:  https://github.com/M4R1OS4S0
+- Github:  https://github.com/mariosasodotcom
 - E-mail:  mariosaso@protonmail.com
 
 --------------------------------------------------------------------------------
