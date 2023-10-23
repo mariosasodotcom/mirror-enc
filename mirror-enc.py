@@ -39,7 +39,7 @@ banner = """
                  <|               .: <mariosaso@protonmail.com>  :.
                                   .: <https://www.mariosaso.com> :.
                                   
-            A GPG Frontend that uses AES & RSA algorithms
+            A GPG Frontend that uses AES & RSA algorithms.
 									
 """
 menu = """
